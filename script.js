@@ -55,7 +55,6 @@ createSelectFromList();
 let setdisplay = async () => {
     let cur1 = selFrom.value.toLowerCase();
     let cur2 = selTo.value.toLowerCase();
-    console.log(cur1,cur2);
     let rate = await getrate(cur1,cur2);
     display.innerHTML = `${getCurrentAmount()*rate[0]} ${cur2.toUpperCase()}`;
 };
