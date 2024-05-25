@@ -1,0 +1,421 @@
+#drop {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.text3d {
+    margin-left: 20px;
+    letter-spacing: 5px;
+    color: #444;
+    font-size: 8em;
+    font-weight: 900;
+    transition: 0.5s;
+    font-family: Playfair display;
+    text-shadow: -1px 1px #222,
+        -2px 2px #222,
+        -3px 3px #222,
+        -4px 4px #222,
+        -5px 5px #222,
+        -6px 6px #222,
+        -7px 7px #222,
+        -8px 8px #222,
+        -9px 9px #222;
+    /* -10px 10px 20px #000000,
+        -11px 11px 30px #000000,
+        -12px 12px 50px #000000,
+        -20px 20px 150px rgb(0, 0, 0); */
+}
+
+#textreveal {
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-family: playfair display;
+    font-size: 3em;
+    color: #00743e;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loadtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textup,
+#textdown {
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    height: 6.5em;
+    overflow: hidden;
+}
+
+#textdown div {
+    margin-top: -0.81em;
+}
+
+#textup {
+    margin-top: -6.5em;
+    animation: textup 1s ease-in-out;
+}
+
+#textdown {
+    margin-bottom: -6.5em;
+    animation: textdown 1s ease-in-out;
+}
+
+@keyframes textup {
+    0% {
+        margin-top: -6.5em;
+    }
+
+    50% {
+        margin-top: -10.5em;
+    }
+
+    100% {
+        margin-top: -6.5em;
+    }
+}
+
+@keyframes textdown {
+    0% {
+        margin-bottom: -6.5em;
+    }
+
+    50% {
+        margin-bottom: -10.5em;
+    }
+
+    100% {
+        margin-bottom: -6.5em;
+    }
+}
+
+@media screen and (max-width:836px) {
+    .text3d {
+        font-size: 7em;
+    }
+
+    #textup,
+    #textdown {
+        /* border: 1px solid; */
+        height: 6em;
+    }
+
+    #textdown div {
+        margin-top: -0.86em;
+    }
+
+    #textup {
+        margin-top: -6em;
+    }
+
+    #textdown {
+        margin-bottom: -6em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -6em;
+        }
+
+        50% {
+            margin-top: -10em;
+        }
+
+        100% {
+            margin-top: -6em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -6em;
+        }
+
+        50% {
+            margin-bottom: -10em;
+        }
+
+        100% {
+            margin-bottom: -6em;
+        }
+    }
+}
+
+@media screen and (max-width:741px) {
+    .text3d {
+        font-size: 6em;
+    }
+
+    #textup,
+    #textdown {
+        height: 5em;
+    }
+
+    #textdown div {
+        margin-top: -0.83em;
+    }
+
+    #textup {
+        margin-top: -5em;
+    }
+
+    #textdown {
+        margin-bottom: -5em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -5em;
+        }
+
+        50% {
+            margin-top: -10em;
+        }
+
+        100% {
+            margin-top: -5em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -5em;
+        }
+
+        50% {
+            margin-bottom: -10em;
+        }
+
+        100% {
+            margin-bottom: -5em;
+        }
+    }
+}
+
+
+@media screen and (max-width:646px) {
+    .text3d {
+        font-size: 5em;
+    }
+    #textup,
+    #textdown {
+        height: 4em;
+    }
+
+    #textdown div {
+        margin-top: -0.8em;
+    }
+
+    #textup {
+        margin-top: -4em;
+    }
+
+    #textdown {
+        margin-bottom: -4em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -4em;
+        }
+
+        50% {
+            margin-top: -9em;
+        }
+
+        100% {
+            margin-top: -4em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -4em;
+        }
+
+        50% {
+            margin-bottom: -9em;
+        }
+
+        100% {
+            margin-bottom: -4em;
+        }
+    }
+}
+
+@media screen and (max-width:551px) {
+    .text3d {
+        font-size: 4em;
+    }
+    #textup,
+    #textdown {
+        height: 3em;
+    }
+    #textreveal{
+        font-size: 2em;
+    }
+    #textdown div {
+        margin-top: -0.75em;
+    }
+
+    #textup {
+        margin-top: -3em;
+    }
+
+    #textdown {
+        margin-bottom: -3em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -3em;
+        }
+
+        50% {
+            margin-top: -8em;
+        }
+
+        100% {
+            margin-top: -3em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -3em;
+        }
+
+        50% {
+            margin-bottom: -8em;
+        }
+
+        100% {
+            margin-bottom: -3em;
+        }
+    }
+}
+
+@media screen and (max-width:455px) {
+    .text3d {
+        font-size: 3em;
+    }
+    #textup,
+    #textdown {
+        height: 2.5em;
+    }
+
+    #textdown div {
+        margin-top: -0.75em;
+    }
+
+    #textup {
+        margin-top: -2.5em;
+    }
+
+    #textdown {
+        margin-bottom: -2em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -2.5em;
+        }
+
+        50% {
+            margin-top: -5em;
+        }
+
+        100% {
+            margin-top: -2.5em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -2em;
+        }
+
+        50% {
+            margin-bottom: -5em;
+        }
+
+        100% {
+            margin-bottom: -2em;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .text3d {
+        font-size: 2em;
+    }
+    #textreveal{
+        font-size: 1.2em;
+    }
+    #textup,
+    #textdown {
+        height: 1.5em;
+    }
+
+    #textdown div {
+        margin-top: -0.75em;
+    }
+
+    #textup {
+        margin-top: -1.5em;
+    }
+
+    #textdown {
+        margin-bottom: -1.5em;
+    }
+
+    @keyframes textup {
+        0% {
+            margin-top: -1.5em;
+        }
+
+        50% {
+            margin-top: -4em;
+        }
+
+        100% {
+            margin-top: -1.5em;
+        }
+    }
+
+    @keyframes textdown {
+        0% {
+            margin-bottom: -1.5em;
+        }
+
+        50% {
+            margin-bottom: -4em;
+        }
+
+        100% {
+            margin-bottom: -1.5em;
+        }
+    }
+}

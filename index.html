@@ -5,16 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/animation.js"></script>
 </head>
-
 <body>
+    <div id="drop">
+        <div id="loader">
+            <div id="textreveal">
+                BY ALAKH
+            </div>
+            <div id="loadtext">
+                <div id="textup">
+                    <div class="text3d">
+                        Exchange App
+                    </div>
+                </div>
+                <div id="textdown">
+                    <div class="text3d">
+                        Exchange App
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="main">
+        <div class="mainLogo">
+            <img src="images/Favicon.png" alt="">
+        </div>
         <div id="head">Currency Converter</div>
         <div id="interface">
             <div class="amount">
-                <p>Enter Amount</p>
-                <input type="text" name="" id="conversionAmount">
+                <div class="wrapper">
+                    <div class="temp"></div>
+                    <p>Enter Amount</p>
+                    <input type="number" pattern="[0-9]" name="" id="conversionAmount">
+                </div>
             </div>
             <div class="dropdown">
                 <div class="from">
@@ -25,7 +55,7 @@
                     </div>
                 </div>
                 <div class="icon">
-                    <img src="exchange.webp" alt="">
+                    <img class="exLogo" src="images/exchange.png" alt="">
                 </div>
                 <div class="to">
                     <p>To</p>
@@ -43,8 +73,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="codes.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/codes.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
