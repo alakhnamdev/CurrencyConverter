@@ -5,15 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+
+    <!-- Loading Animation CSS -->
     <link rel="stylesheet" href="css/animation.css">
+    <!-- Loading Animation CSS -->
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet" />
+    <!-- Google Fonts -->
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Main CSS -->
+    
+    <!-- Loading Animation JS -->
     <script src="js/animation.js"></script>
+    <!-- Loading Animation JS -->
+
 </head>
 <body>
+
+    <!-- Loading Animation -->
     <div id="drop">
         <div id="loader">
             <div id="textreveal">
@@ -33,12 +49,17 @@
             </div>
         </div>
     </div>
+    <!-- Loading Animation -->
+
+    <!-- Exchange App -->
     <div id="main">
         <div class="mainLogo">
             <img src="images/Favicon.png" alt="">
         </div>
         <div id="head">Currency Converter</div>
         <div id="interface">
+
+            <!-- Input Section -->
             <div class="amount">
                 <div class="wrapper">
                     <div class="temp"></div>
@@ -46,6 +67,9 @@
                     <input type="number" pattern="[0-9]" name="" id="conversionAmount">
                 </div>
             </div>
+            <!-- Input Section -->
+            
+            <!-- Flags API Section -->
             <div class="dropdown">
                 <div class="from">
                     <p>From</p>
@@ -65,16 +89,29 @@
                     </div>
                 </div>
             </div>
+            <!-- Flags API Section -->
+
+            <!-- Conversion API Result -->
             <div class="getdata">
                 <div id="msg">
-                    <p>Convertion result</p>
+                    <p>Conversion result</p>
                 </div>
                 <button id="convert">Exchange Rate</button>
             </div>
+            <!-- Conversion API Result -->
+
         </div>
     </div>
+    <!-- Exchange App -->
+
+    <!-- Script For Country Codes -->
     <script type="text/javascript" src="js/codes.js"></script>
+    <!-- Script For Country Codes -->
+
+    <!-- Fetching Script -->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Fetching Script -->
+
 </body>
 
 </html>
